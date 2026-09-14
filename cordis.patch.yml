@@ -1,0 +1,8 @@
+# dsh-rainy-brand bundle patch
+#
+# Insert one client-plugin row after every shipped layer, so this package's
+# browser half applies after `ui-brand-official` and shadows the official
+# wordmark on the `sidebar.brand.name` slot. The brand mark row is untouched.
+- insert:
+    - id: ui-brand-rainy
+      name: 'dsh-rainy-brand'
