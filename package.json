@@ -1,7 +1,7 @@
 {
   "name": "dsh-rainy-brand",
-  "description": "DSH web 插件：侧栏字标、空白会话大标题与「预览版」标签的用户可编辑品牌配置，保存在 DSH 设置文档，改完即时生效",
-  "version": "0.2.1",
+  "description": "DSH web 插件：侧栏字标、空白会话大标题与「预览版」标签的用户可编辑品牌配置，外加按选择器的 CSS 注入，保存在 DSH 设置文档，改完即时生效",
+  "version": "0.3.0",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
