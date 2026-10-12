@@ -21,10 +21,12 @@ dsh plugin --profile web add dsh-rainy-brand
 | 字段 | 出厂值 | 说明 |
 |---|---|---|
 | `sidebarName` | 淋雨的DSH | 侧栏名称；留空隐藏 |
-| `heroHeadline` | 探索未至之境 | 空白会话中央标题 |
+| `heroHeadline` | 风经过很多地方，我仍只记得一种温度 | 空白会话中央标题 |
 | `showPreviewBadge` | `true` | 是否显示标题右侧标签 |
-| `previewBadgeText` | 预览版 | 标签文字；留空隐藏 |
-| `cssRules` | `[]` | CSS 规则列表，每项 `{ selector, css }` |
+| `previewBadgeText` | 风向 | 标签文字；留空隐藏 |
+| `cssRules` | 内置 13 条样式规则 | CSS 规则列表，每项 `{ selector, css }` |
+
+默认配置包含菜单圆角、透明输入背景、模糊效果、字体和桌面标题栏拖拽区域等现成样式，新安装无需手动配置。字体使用本机已安装字体及系统回退字体；部分 CSS 选择器依赖宿主生成的类名，宿主升级后可能需要调整。要完全关闭内置 CSS，可显式设置 `cssRules: []`；清除覆盖则恢复内置规则。
 
 **CSS 注入**：
 
@@ -39,9 +41,9 @@ dsh plugin --profile web add dsh-rainy-brand
 - id: ui-brand-rainy
   config:
     sidebarName: 淋雨的DSH
-    heroHeadline: 探索未至之境
+    heroHeadline: 风经过很多地方，我仍只记得一种温度
     showPreviewBadge: true
-    previewBadgeText: 预览版
+    previewBadgeText: 风向
     cssRules:
       - selector: body
         css: "filter: saturate(1.2);"
